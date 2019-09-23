@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("images/back.jpg")
+}
+
+
+header {
+  background-color:rgb(red, green, rgb(255, 51, 0))
+  padding: 30px;
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+.hello
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: grey;
+    padding: 15px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(24, 0, 109)
+  }  
+li {
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    size: 45px;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: bisque;
+  }
+ li a:hover
+ {
+     background-color: chartreuse;
+ } 

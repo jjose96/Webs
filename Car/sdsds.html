@@ -1,0 +1,59 @@
+<html>
+    <head>
+     <link rel="stylesheet" type="text/css" href="css/extdemo.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div style="background: url('images/back.jpg');">
+            <header>
+                    <h2 style="font-family: 'Pacifico', cursive; color: darkred;size: 100px;">XYZ Cars</h2>
+                            <ul style="size: 40px;">
+                                    <li><a href="/">Contact</a></li>
+                                    <li><a class="active" href="/">Locations</a></li>
+                                    <li><a href="/">Latest News</a></li>
+                                    <li><a href="/">Models</a></li>
+                                    <li><a href="/">Home</a></li>
+                                  </ul>
+                                  <div>
+                  </header>
+                  <p style="color: indigo; size:20px;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                  </p>
+                  <div class="w3-content w3-display-container">
+                        <img class="mySlides" src="images/car.jpg" style="width:100%">
+                        <img class="mySlides" src="images/car1.jpg" style="width:100%">
+                        <img class="mySlides" src="images/car2.jpg" style="width:100%">
+                        <img class="mySlides" src="images/car3.jpeg" style="width:100%">
+                        <img class="mySlides" src="images/car4.jpeg" style="width:100%">
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                      </div>
+                      
+                      <script>
+                      var slideIndex = 1;
+                      showDivs(slideIndex);
+                      
+                      function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                      }
+                      
+                      function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                      }
+                      </script>
+                 
+                  <footer>
+                    <p>Footer</p>
+                  </footer>
+                  </div>
+    </body>
+</html>

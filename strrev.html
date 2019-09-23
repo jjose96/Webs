@@ -1,0 +1,22 @@
+<html>
+<body>
+<script type="text/javascript">
+function fun()
+{
+  var ne="";
+  var x=document.getElementById("re").value;
+  var n=x.length;
+  for (var i=n-1;i>=0;i--)
+  {
+     var ne=ne+x[i]
+  }
+  document.getElementById("dis").innerHTML=ne
+}
+</script>
+<input type="text" id="re">
+<input type="submit" value="Reverse" onclick="fun()">
+<br>
+<h4>Output:</h4>
+<p id="dis"></p>
+</body>
+</html>

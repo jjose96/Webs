@@ -1,0 +1,20 @@
+<html>
+<body>
+<script type="text/javascript">
+function fun()
+{
+  n=document.getElementById("nu").value;
+  document.write("<table border='4'>")
+  document.write("<th>Number</th><th>Square</th>")
+  for(var i=1;i<=n;i++)
+  {
+    document.write("<tr><td>"+i+"</td>")
+      document.write("<td>"+i*i+"</td><tr>")
+  }
+  document.write("</table>")
+}
+</script>
+<input type="number" id="nu">
+<input type="submit" value="Num" onclick=fun()>
+</body>
+</html>
