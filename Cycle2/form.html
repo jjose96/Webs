@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <style>
+            body{
+                background-color:lavender;
+            }
+            </style>
+        <div>
+        <form name="myForm" action="thankyou.html" onsubmit="return check()" method="post">
+            <table>
+            <tbody>
+                <tr><td><label for="name">Name:</label></td><td><input id="name" type="text"></td></tr>
+                <tr><td><label for="email">Email Address:</label></td><td><input id="email" type = "text"></td></tr>
+                <tr><td><label for="desc">Comment:</label></td><td><textarea id="comment"></textarea></td></tr>
+                <tr><td></td><td><input type="submit" value="Submit"></td></tr>
+            </tbody>
+        </form>
+        </div>
+        <script>
+        function check() {
+          var x = document.forms["myForm"]["name"].value;
+          var y= document.forms["myForm"]["email"].value;
+          var z= document.forms["myForm"]["comment"].value;
+          if (x == "") {
+                  alert("Name must be filled out");
+                   return false;
+          }
+          else if (y == "") {
+                  alert("Email must be filled out");
+                   return false;
+          }
+          else if (z == "") {
+                  alert("Comment must be filled out");
+                   return false;
+          }                
+  }
+        </script>
+    </body>
+</html>
