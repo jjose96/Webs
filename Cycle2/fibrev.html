@@ -1,0 +1,48 @@
+<html>
+
+<body>
+    <b>Find Fibonacci series</b></br>
+    <input type="number" id="fib">
+    <input type="submit" value="Fibo" onclick=fun()>
+    </br>
+    </br>
+    <b> String Reverse </b></br>
+    <input type="text" id="re">
+    <input type="submit" value="Reverse" onclick="rev()">
+    <br>
+    <h4>Output:</h4>
+    <p id="dis"></p>
+
+    <script type="text/javascript">
+        function fun() {
+            var a = 0;
+            var b = 1
+            var c;
+            var d = []
+            var n = document.getElementById("fib").value;
+            for (var i = 2; i < n; i++) {
+                c = a + b;
+                a = b;
+                b = c;
+                p = c.toString();
+                d[i] = p
+            }
+            d[0] = 0;
+            d[1] = 1;
+
+            document.getElementById("dis").innerHTML = d;
+        }
+
+        function rev() {
+            var ne = "";
+            var x = document.getElementById("re").value;
+            var n = x.length;
+            for (var i = n - 1; i >= 0; i--) {
+                var ne = ne + x[i]
+            }
+            document.getElementById("dis").innerHTML = ne
+        }
+    </script>
+</body>
+
+</html>
